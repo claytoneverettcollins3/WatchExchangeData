@@ -1,2 +1,2 @@
 # WatchExchangeData
-Web scrape R/WatchExchange and explore price data for various brands and models
+Web scrape r/WatchExchange and explore price data for various brands and models
