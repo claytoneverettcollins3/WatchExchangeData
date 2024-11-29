@@ -1,0 +1,43 @@
+Actual Link
+https://old.reddit.com/r/Watchexchange/search/?q=watchexchange&sort=top&restrict_sr=on&t=year
+
+Something that I saw on youtube
+old.reddit.com/Watchexchange/top/year
+
+
+Desired Data:
+- Post title
+    - What the item is (Brand, maybe model)
+- Original Publisher (Submitter) first comment 
+    - Price
+    - Brand and model (compare to title to see which is better source)
+    
+
+
+Automated Web Browsing and Webscraping
+
+    
+1. Open old reddit and go to the WatchExchange subreddit. Sort by top this year.
+
+2. Return the title of the first post. This is the second column. The first column will be the primary key (incrementing integer).
+
+4. Click on the post and scrape for the top submitter comment. This will be column 3 in our dataframe.
+
+5. Go back to the previous page and click on the next post and repeat until reaching the end of the page. I believe that there will be 25 items per page.
+
+6. Click the next button to proceed to the next page and repeat the process.
+
+
+Data Cleansing
+
+1. Strip out the price from OPs original comment on the post.
+
+2. Strip out the brand from either the post title or OPs original comment on the post. Hopefully I can obtain a list of models for a given brand and use that to search for key words in the post comment.
+
+3. Strip out the model from OPs original comment on the post.
+
+Scope: I may just do this for a list of brands that I am interested in (Rolex, Omega, Seiko (Grand Seiko))
+
+
+Notes: I plan to ignore "collection" sales because I don't want to have to deal with the messiness. I need to figure out how to filter these out.
+
